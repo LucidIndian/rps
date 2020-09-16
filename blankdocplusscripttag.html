@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissors</title>
+    </head>
+    <body>
+        <h1>Rock Paper Scissors</h1>
+    </body>
+    <p>Rock Paper Scissors!:</p>
+
+    <script>
+    function computerPlay() {
+        let cpuPlay = Math.random();
+
+        if (cpuPlay < 0.3) {
+            return `Rock`; 
+        } else if ((cpuPlay > 0.3) && (cpuPlay < 0.6 )) {
+            return 'Paper';
+        } else {
+            return 'Scissors';
+        }
+        // The function plays the CPU, a random selection of Rock, Paper, or Scissors.
+    }
+    computerPlay(); // Call the function
+</script>
+
+</body>
+</html>
