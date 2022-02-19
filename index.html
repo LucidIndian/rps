@@ -2,19 +2,35 @@
 <html lang='en'>
   <head>
     <meta charset='UTF-8'/>
-    <title>Game: Rock, Paper, Scissors</title>
+    <title>Rock, Paper, Scissors</title>
   </head>
   <body>
-    <h1>Game: Rock, Paper, Scissors</h1>
-      <p>Five games are played in in the console, player vs. computer!</p>
-      <p>A winner is returned at the end!</p>
+    <h1>Let's play Rock, Paper, Scissors!</h1>
+      <p>Rules:</p> 
+        <ol>
+          <li>R beats S, S beats P, P beats R</li>
+          <li>First to five points wins!</li> <!--"Remove the logic that plays exactly five rounds.-->
+          <li>The winner is returned at the end</li>
+          <li>Click the buttons below to play:</li>
+        </ol>   
 
+    <!--"UI should have 3 buttons instead of typing prompt-->
+    <!--Button 1; Rock-->
+    <button type="button" id="rock" class="button">I choose Rock</button>
+    <!--Button 2; Paper-->
+    <button type="button" id="paper" class="button">I choose Paper</button>
+    <!--Button 3; Scissors-->
+    <button type="button" id ="scissors" class="button">I choose Scissors</button>
+
+    <!--"Add a div for displaying results"-->
+    <div id="rpsResults">
+      <h2>RPS Results:</h2>
+    </div>
 
     <!-- Between are script tags where the 
       JS RPS game will initiate. TOP advises 
       linking a .js file is best practice... -->
     <script src="rps.js"></script>
-
 
   </body>
 </html>
