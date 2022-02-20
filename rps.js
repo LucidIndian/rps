@@ -144,8 +144,8 @@ function finalWinner() {
     const container4 = document.querySelector('#rpsResults'); // selects the target element of the DOM (where we want to manipulate)
     const resultsText4 = document.createElement('h2'); // creates the p element in memory
     resultsText4.textContent = "GAME OVER..." + overallWinner; // adds text to the p element in memory
-    resultsText4.style.color = 'black'; // styles text to the p element in memory
-    rpsResults.appendChild(resultsText4); // adds the p element to the DOM (prints the playerSelection)
+    resultsText4.style.color = 'purple'; // styles text to the p element in memory
+    winner.appendChild(resultsText4); // adds the p element to the DOM (prints the playerSelection)
   } else {
     // do nothing
   };
