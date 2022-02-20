@@ -142,7 +142,7 @@ function finalWinner() {
 
   if (overallWinner == "The CPU wins the game!" || overallWinner == "The Player wins the game!") {
     const container4 = document.querySelector('#winner'); // selects the target element of the DOM (where we want to manipulate)
-    const resultsText4 = document.createElement('h2'); // creates the p element in memory
+    const resultsText4 = document.createElement('h2'); // creates the h2 element in memory
     resultsText4.textContent = "GAME OVER..." + overallWinner; // adds text to the p element in memory
     resultsText4.style.color = 'purple'; // styles text to the p element in memory
     winner.appendChild(resultsText4); // adds the p element to the DOM (prints the playerSelection)
