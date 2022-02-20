@@ -30,7 +30,7 @@ function playerPick(e) {
   const container2 = document.querySelector('#rpsResults'); // selects the target element of the DOM (where we want to print the CPU selection)
   const resultsText2 = document.createElement('p'); // creates the p element in memory
   resultsText2.textContent =  "The CPU selects " + computerSelection; // adds text to the p element in memory
-  resultsText2.style.color = 'red'; // styles text to the p element in memory
+  resultsText2.style.color = 'yellow'; // styles text to the p element in memory
   rpsResults.appendChild(resultsText2); // adds the p element to the DOM (prints the playerSelection)
   // trigger the playRound fxn with parameters and assign value to a variable. 
   // FYI: When parameters are excluded, it evaluates to the "else" option! (Took 30 min to troubleshoot this)  
@@ -144,7 +144,7 @@ function finalWinner() {
     const container4 = document.querySelector('#winner'); // selects the target element of the DOM (where we want to manipulate)
     const resultsText4 = document.createElement('h2'); // creates the h2 element in memory
     resultsText4.textContent = "GAME OVER..." + overallWinner; // adds text to the p element in memory
-    resultsText4.style.color = 'purple'; // styles text to the p element in memory
+    resultsText4.style.color = 'pink'; // styles text to the p element in memory
     winner.appendChild(resultsText4); // adds the p element to the DOM (prints the playerSelection)
   } else {
     // do nothing
