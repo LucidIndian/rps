@@ -6,3 +6,8 @@ body {
  p, li, h1, h2, h3 {
    color: white;
  }
+
+ .disclaimer {
+  color: grey;
+  font-size: 0.8em;
+ }
